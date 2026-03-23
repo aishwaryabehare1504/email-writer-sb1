@@ -18,7 +18,7 @@
 - POST /generate-email → Generate email response
 
 ## 📷 Screenshots
-(Will add below)
+![API Screenshot](email.png)
 
 ## ▶️ How to Run
 1. Clone the repository
