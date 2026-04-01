@@ -1,6 +1,6 @@
 # ✉️ AI Email Generator API (Spring Boot | Gemini API)
 
-🔗 Live API: Coming Soon (Currently runs on localhost)  
+🔗 **Live Demo:** https://email-writer-sb1-1.onrender.com/api/email/demo  
 📂 GitHub Repo: https://github.com/aishwaryabehare1504/email-writer-sb1  
 
 ---
@@ -9,7 +9,7 @@
 
 An AI-powered Email Generator application that provides REST APIs to generate professional email replies based on user input.
 
-💡 Demonstrates backend development, REST API design, external API integration, and prompt engineering using Gemini API.
+💡 Demonstrates backend development, REST API design, external API integration, Docker containerization, cloud deployment, and prompt engineering using Gemini API.
 
 ### It allows:
 - Generate email replies automatically  
@@ -41,6 +41,8 @@ An AI-powered Email Generator application that provides REST APIs to generate pr
 - Gemini API integration  
 - Prompt-based email generation using LLM  
 - Clean backend structure  
+- Dockerized application  
+- Deployed on cloud (Render)  
 
 ---
 
@@ -70,6 +72,8 @@ com.email.writer
 - Gemini API (Google AI)  
 - Spring WebFlux (WebClient)  
 - Maven  
+- Docker  
+- Render (Cloud Deployment)  
 
 ---
 
@@ -93,6 +97,10 @@ GEMINI_API_KEY=your_api_key
 
 ### 📧 Email API
 - POST `/api/email/generate`
+
+### 🌐 Demo Endpoint (for recruiters)
+- GET `/api/email/demo`  
+👉 Open in browser to see live output
 
 ---
 
@@ -143,6 +151,7 @@ Best regards,
 - Integrating Gemini API  
 - Handling JSON response parsing  
 - Designing effective prompts  
+- Deploying Dockerized application  
 
 ---
 
@@ -151,7 +160,6 @@ Best regards,
 - Multiple email templates  
 - Multi-language support  
 - Frontend UI  
-- Deployment  
 - Authentication system  
 
 ---
@@ -179,4 +187,4 @@ This project is for learning and demonstration purposes only.
 
 ## ❤️ Built With
 
-Java + Spring Boot + Gemini API
+Java + Spring Boot + Gemini API + Docker + Render 🚀
