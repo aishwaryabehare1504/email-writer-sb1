@@ -14,8 +14,11 @@ public class EmailGeneratorController {
         String response=emailGeneratorService.generateEmailReply(emailRequest);
         return ResponseEntity.ok(response);
     }
-    @GetMapping("/")
-    public String home() {
-        return "AI Email Writer API is running 🚀";
+    @GetMapping("/demo")
+    public String demo() {
+        EmailRequest request = new EmailRequest();
+        request.setEmailContent("Hi, it was great meeting you at Google IO.");
+
+        return emailGeneratorService.generateEmailReply(request);
     }
 }
