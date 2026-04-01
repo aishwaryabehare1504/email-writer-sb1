@@ -18,7 +18,11 @@ public class EmailGeneratorController {
     public String demo() {
         EmailRequest request = new EmailRequest();
         request.setEmailContent("Hi, it was great meeting you at Google IO.");
+        request.setTone("professional");
 
-        return emailGeneratorService.generateEmailReply(request);
+        String response = emailGeneratorService.generateEmailReply(request);
+
+        // Clean output (optional but recommended)
+        return response;
     }
 }
