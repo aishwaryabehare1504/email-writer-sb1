@@ -15,14 +15,16 @@ public class EmailGeneratorController {
         return ResponseEntity.ok(response);
     }
     @GetMapping("/demo")
-    public String demo() {
+    public ResponseEntity<String> demo() {
         EmailRequest request = new EmailRequest();
         request.setEmailContent("Hi, it was great meeting you at Google IO.");
-        request.setTone("professional");
 
-        String response = emailGeneratorService.generateEmailReply(request);
+        String email = emailGeneratorService.generateEmailReply(request);
 
-        // Clean output (optional but recommended)
-        return response;
+        String formatted = email.replace("\n", "<br>");
+
+        return ResponseEntity.ok()
+                .header("Content-Type", "text/html")
+                .body(formatted);
     }
 }
